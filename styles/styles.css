@@ -1,0 +1,155 @@
+@import url(http://fonts.googleapis.com/css?family=Lato|Oswald);
+
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* TODO: Remove these notes
+
+4924 top-bar
+
+*/
+
+
+/* CLEARFIX */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* GENERIC */
+
+body {
+  background-image: url("/images/bg.jpg");
+}
+
+
+/* HEADER */
+
+.banner {
+  background-color: white;
+  background-image: url("/images/header_bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center; /* TODO-ALL: Change to margin: 0 auto; */
+}
+
+.title-bar { /* TODO: May not need div.title-bar at all */
+  display: inline;
+}
+
+#logo {
+  /*background-image: url("/images/header_bg.svg");*/
+}
+
+#add-new {
+  float: right;
+  height: auto; /* TODO: Remove later */
+  width: 48px; /* TODO: Remove later */
+}
+
+
+/* NAV */
+
+.nav-bar {
+  background-color: rgba(61, 61, 62, 1);
+}
+
+ul.main-nav {
+  text-align: center;
+}
+
+li.nav-item {
+  color: rgba(133, 134, 137, 1);
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+  margin: 10px 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+li.nav-item a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+li.nav-item a:hover {
+  color: rgba(220, 92, 48, 1); /* TODO: Not working */
+}
+
+li.nav-item a:visited {
+  color: rgba(133, 134, 137, 1);
+}
+
+
+/* MAIN CONTENT */
+
+.main-content {
+  padding: 25px 0; /* Must account for .fastening margins */
+}
+
+.fastening {
+  background-color: rgba(255, 255, 255, 1);
+  font-family: 'Lato', sans-serif;
+  margin: 10px auto;
+  padding: 10px;
+  width: 50%;
+}
+
+.fastening .image {
+  /* TODO-ALL: Remove all borders */
+  /*border: 1px solid red;*/
+  float: left;
+  text-align: center;
+  width: 30%;
+}
+
+.fastening .content {
+  /*border: 1px solid red;*/
+  box-sizing: border-box; /* TODO: Change to padding-box after completion */
+  float: right;
+  padding-left: 15px;
+  width: 70%;
+}
+
+.fastening .image img { /* TODO: Remove this if not necessary */
+  height: auto;
+  width: 100%;
+}
+
+h3.title {
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+div.metadata span {
+  color: rgba(123, 124, 127, 1);
+  /* or:
+    color: rgba(146, 147, 149, 1);
+  */
+}
+
+p.description {
+  color: rgba(47, 46, 48, 1);
+}
+
+
+/* FOOTER */
+
+footer {
+  background-color: rgba(61, 61, 62, 1);
+  text-align: center;
+}
+
+footer a img {
+  margin: 10px 4px;
+}
+
+
+
+
+
+
