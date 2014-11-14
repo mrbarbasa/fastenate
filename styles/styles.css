@@ -35,17 +35,34 @@ body {
   text-align: center;
 }
 
-.add-new-div {
-  padding: 12px 12px 0 0;
+.add-new-box {
+  border: 2px solid rgba(219, 129, 81, 1);
+  height: 30px;
+  margin: 12px 24px 0 0;
   position: absolute;
   right: 0;
   top: 0;
+  width: 30px;
 }
 
 #add-new {
-  border: 2px solid rgba(219, 129, 81, 1);
-  padding: 5px;
+  color: rgba(159, 69, 44, 1);
+  font-size: 36px;
+  margin: 10px 30px 0 0;
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  top: 0;
 }
+
+/* not working */
+/*.add-new-box:hover {
+  background-color: rgba(211, 89, 49, 1);
+}
+
+#add-new:hover {
+  color: rgba(255, 255, 255, 1);
+}*/
 
 
 /* NAV */
@@ -90,10 +107,15 @@ li.nav-item a:hover {
 
 .fastening {
   background-color: rgba(255, 255, 255, 1);
+  box-sizing: border-box;
   font-family: 'Lato', sans-serif;
   margin: 10px auto;
   padding: 15px;
   width: 50%;
+}
+
+.fastening:hover {
+  border: 5px solid rgba(224, 147, 47, 1);
 }
 
 .fastening .image {
