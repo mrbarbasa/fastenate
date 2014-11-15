@@ -187,8 +187,35 @@ footer {
   text-align: center;
 }
 
-footer a img {
+#facebook-logo, #instagram-logo {
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 25px;
   margin: 10px 4px;
+  width: 25px;
+}
+
+#facebook-logo a, #instagram-logo a {
+  display: block;
+  height: 25px;
+  width: 25px;
+}
+
+#facebook-logo {
+  background-image: url("/images/facebook_grey.svg");
+}
+
+#facebook-logo:hover {
+  background-image: url("/images/facebook_orange.svg");
+}
+
+#instagram-logo {
+  background-image: url("/images/instagram_grey.svg");
+}
+
+#instagram-logo:hover {
+  background-image: url("/images/instagram_orange.svg");
 }
 
 
