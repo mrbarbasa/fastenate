@@ -56,13 +56,14 @@ a#add-new:hover {
 }
 
 ul.main-nav {
+  /*border: 1px solid green;*/
   text-align: center;
 }
 
 li.nav-item {
+  /*border: 1px solid red;*/
   display: inline-block;
   font-family: 'Oswald', sans-serif;
-  margin: 14px 2px;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -72,8 +73,11 @@ li.nav-item.middot {
 }
 
 li.nav-item a {
+  /*border: 1px solid yellow;*/
   color: rgba(133, 134, 137, 1);
+  display: inline-block;
   letter-spacing: 1px;
+  padding: 14px 2px;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -230,6 +234,41 @@ footer {
 
 /* MOBILE */
 @media only screen and (max-width:480px) {
+  /* Header */
+  .banner {
+    background-image: none;
+    padding-left: 15px;
+    text-align: left;
+  }
+
+  a#add-new {
+    text-align: center;
+  }
+
+  /* Nav */
+  li.nav-item {
+    /*border: 1px solid red;*/
+    display: block;
+    float: left;
+    width: 33.33%;
+  }
+
+  li.nav-item.middot {
+    display: none;
+  }
+
+  li.nav-item a {
+    /*border: 1px solid yellow;*/
+    border-left: 1px solid rgba(129, 129, 132, 1);
+    display: block;
+    padding: 14px 0;
+    width: 100%; /* Must add this or else width will only be as big as text */
+  }
+
+  li.nav-item:first-child a {
+    border-left: none;
+  }
+
   /* Main Content */
   .main-content {
     padding: 0;
