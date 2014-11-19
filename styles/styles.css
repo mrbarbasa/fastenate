@@ -35,34 +35,24 @@ body {
   text-align: center;
 }
 
-.add-new-box {
+a#add-new {
   border: 2px solid rgba(219, 129, 81, 1);
-  height: 30px;
-  margin: 12px 24px 0 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 30px;
-}
-
-#add-new {
   color: rgba(159, 69, 44, 1);
-  font-size: 36px;
-  margin: 10px 30px 0 0;
+  font-size: 32px;
+  height: 26px;
+  line-height: 22px; /* Make line-height smaller than font-size */
   position: absolute;
-  right: 0;
+  right: 16px;
   text-decoration: none;
-  top: 0;
+  top: 16px;
+  width: 26px;
 }
 
-/* not working */
-/*.add-new-box:hover {
+a#add-new:hover {
   background-color: rgba(211, 89, 49, 1);
-}
-
-#add-new:hover {
+  border-color: rgba(211, 89, 49, 1);
   color: rgba(255, 255, 255, 1);
-}*/
+}
 
 
 /* NAV */
@@ -107,15 +97,16 @@ li.nav-item a:hover {
 
 .fastening {
   background-color: rgba(255, 255, 255, 1);
-  box-sizing: border-box;
+  border: 5px solid rgba(255, 255, 255, 1);
   font-family: 'Lato', sans-serif;
   margin: 10px auto;
-  padding: 15px;
+  padding: 10px;
   width: 50%;
 }
 
 .fastening:hover {
   border: 5px solid rgba(224, 147, 47, 1);
+  cursor: pointer;
 }
 
 .fastening .image {
